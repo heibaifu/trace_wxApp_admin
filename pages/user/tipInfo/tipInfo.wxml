@@ -1,0 +1,5 @@
+<view style='padding:50px 20px 0 20px' catchtap='goLogin'>
+  <view style='font-size:18px;margin-bottom:15px'>为了更好提供服务，beaba仓库联盟需要等你登录后进行操作</view>
+  <button catchtap='goLogin' type='primary'>立即登录</button>
+  <button style='background:#f2f2f2;margin-top:10px' catchtap='cancelLogin'>取消登录</button>
+</view>

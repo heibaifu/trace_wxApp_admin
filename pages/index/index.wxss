@@ -1,0 +1,69 @@
+/* pages/index/index.wxss */
+
+.box {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  margin-top: 10px;
+}
+.tracknumInput {
+  width: 85%;
+  height: 46px;
+  background: #fff;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  position: ralative
+
+}
+.box1 {
+  margin: auto;
+  width: 300px;
+  justify-content: space-between;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.workList {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 16px #dadada;
+  height: 140px;
+  width: 48%;
+  margin-bottom: 4%;
+  text-align: center;
+  padding-top: 35px
+}
+
+.list {
+  background: #f2f2f2;
+  height: 140px;
+  width: 140px;
+}
+
+.icon1 {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px
+}
+
+.icon2 {
+  width: 70px;
+  height: 70px;
+ 
+}
+
+.icon3 {
+  width: 45px;
+  height: 45px;
+ 
+}
+
+.icon4 {
+  width: 60px;
+  height: 60px;
+ margin-bottom: 10px
+}
+.bottom{
+  position:absolute;bottom:20px;width:94%;text-align: center;color:#999999
+}

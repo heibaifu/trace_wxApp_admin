@@ -1,0 +1,19 @@
+<view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+<verifyCode verifyImageCode="{{imageCode}}" needVerifyImage="'true'"  showVerifyImage="'true'" canInputPhoneNum="'true'" bind:showVerifyImageModal="showVerifyImageModal" bind:getPhoneNum="getPhoneNum" bind:getVerifyCodeVal="getVerifyCodeVal" />
+<view wx:if="{{showModalStatus}}" class="content commodity_attr_box">
+  <view class="padding10 line-height30">
+    输入图片验证码
+  </view>
+  <view class='login-container flex-middle flex-between'>
+    <input style='flex:1 0 auto;' 
+bindinput='getVerifyImageCodeVal' type="text" class="login-input" placeholder-style="color:#ccc" maxlength="4" placeholder="" />
+    <view class='verify-image'>
+      <image style="width:80px;height:40px;" src="{{verifyImage}}" bindtap="changeVerifyImage"></image>
+    </view>
+  </view>
+  <view class="padding10-0">
+    <button class='theme-btn' bindtap='confirmImageCode' hover-class="theme-btn-active">     
+      确定
+    </button>
+  </view>
+</view>

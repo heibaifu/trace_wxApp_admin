@@ -1,0 +1,115 @@
+.component-border-top {
+  border-top: 10px solid #f7f7f7;
+}
+
+.item {
+  height: 24px;
+  line-height: 24px;
+}
+
+.item-lg {
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+}
+
+.item-title {
+  font-size: 14px;
+  height: 34px;
+  line-height: 24px;
+  padding: 5px 0;
+}
+
+.item-detail{
+  line-height:18px;
+}
+
+.item-default {
+  padding: 10px;
+  border-bottom: 1px solid #f8f8f8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+
+.input-container {
+  border-bottom: 1px solid #f2f2f2;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.light-input {
+  width: 100%;
+  font-size: 11pt;
+  height: 40px;
+  line-height: 40px;
+  color: #333;
+}
+
+input.border {
+  border: 1px solid #ccc;
+  background-color: transparent;
+  border-radius: 3px;
+  height: 28px;
+  padding: 4px 10px;
+  color: #333;
+  line-height: 20px;
+}
+
+
+.blank-gray {
+  height: 16px;
+  background-color: #f2f2f2;
+}
+
+.blank-gray-10 {
+  height: 10px;
+  background-color: #f2f2f2;
+}
+
+
+.border-title{
+  width: 100%;
+  text-align: center;
+  height: 30px; 
+  padding: 0 10%;
+}
+
+.border-title .border-title-line{
+  height: 15px;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+}
+
+.border-title .title{
+  height: 20px;
+  line-height: 20px;
+  display: inline-block;
+  background: #fff;
+  padding:0 10px;
+  position: relative;
+  z-index: 2;
+  top:-10px;
+}
+
+.small-button{
+  line-height: 30px; 
+  margin-left:6px;
+  font-size: 13px;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.middle-button{
+   line-height: 34px; 
+  margin-left:6px;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+.small-button.active{
+  background-color: #ff8716;
+  color: #fff;
+}

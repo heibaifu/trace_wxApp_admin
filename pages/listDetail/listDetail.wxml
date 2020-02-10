@@ -1,0 +1,20 @@
+<!--pages/listDetail/listDetail.wxml-->
+<view style='min-height:100vh;background:#f2f2f2;padding:10px'>
+  <view class="list" wx:for='{{goodsDetailArr}}' wx:key="index">
+    <image src='/assets/img/index/close.png' style='width:20px;height:20px;position:absolute;top:6px;right:6px' data-id="{{item.uniqueCode}}" catchtap='clickDelete' data-index='{{index}}' wx:if='{{!isShow}}'></image>
+    <view class='list-img'>
+      <image lazy-load src="{{item.image}}" style='width:100%;height:100%;' wx:if='{{item.type ==1 }}'></image>
+      <image lazy-load src="/assets/img/index/box.png" class='box' wx:if='{{item.type ==2 }}'></image>
+      <view class='open' wx:if='{{item.type ==2 }}' data-id='{{item.uniqueCode}}' catchtap='goAgencyBoxList'>点击查看</view>
+    </view>
+
+    <view>
+      <view style='font-size: 15px;'>{{item.name}}</view>
+      <view>32片装</view>
+      <view style='font-size: 15px;margin-top:14px'>编号{{item.number}}</view>
+      <!-- <view style='font-size: 15px;margin-top:14px'>编号{{item.uniqueCode}}</view> -->
+    </view>
+  </view>
+  <view wx:if='{{!goodsDetailArr.length}}' style="width:100%;text-align:center;padding:20px">暂无数据</view>
+
+</view>

@@ -1,0 +1,49 @@
+.tracknum {
+  width: 100%;
+  height: 46px;
+  line-height: 46px;
+  background: #69f;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.tracknumInput {
+  width: 85%;
+  height: 46px;
+  background: #fff;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  position: ralative;
+}
+
+.scan {
+  width: 100%;
+  background: #09f;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  position: fixed;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.close1 {
+  position: absolute;
+  width: 50px;
+  height: 43px;
+  top: 0px;
+  right: 0px;
+  index: 100000;
+}
+
+.closeimg {
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  right: 8px;
+  position: absolute
+}

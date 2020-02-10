@@ -1,0 +1,36 @@
+<!--pages/index/index.wxml-->
+<view style='background:#f2f2f2;min-height:100vh;padding:20px;position:relative'>
+
+  <view style='display:flex;line-height: 20px'>
+    <view style='font-size:14px'>名称：</view>
+    <view style='color:#999999;font-size:14px' >{{ userInfo.name || '--' }}</view>
+  </view>
+  <view style='display:flex;margin-top:10px;line-height: 20px'>
+    <view style='font-size:14px'>账号：</view>
+    <view style='color:#999999;font-size:14px'>{{ userInfo.phone ||'--'}}</view>
+  </view>
+  <view class='box'>
+    <view class="box1">
+      <view class='workList' catchtap='godeliverManage' wx:if='{{shipStatus!=1}}'>
+        <image lazy-load src="/assets/img/index/delivery.png" class="icon1"></image>
+        <view>拣货出库</view>
+      </view>
+      <view class='workList' catchtap='gohistoryList'>
+        <image lazy-load src="/assets/img/index/history.png" class="icon2"></image>
+        <view>拣货历史</view>
+      </view>
+      <view class='workList' catchtap='goPassowrd' wx:if='{{userInfo}}'>
+        <image lazy-load src="/assets/img/index/password.png" class="icon4"></image>
+        <view>修改密码</view>
+      </view>
+      <view class='workList ' catchtap='logoutClick' wx:if='{{userInfo}}'>
+        <image lazy-load src="/assets/img/index/logout.png" class="icon1" style="width:45px;height:45px"></image>
+        <view>注销登录</view>
+      </view>
+      
+    </view>
+  </view>
+  <view class='bottom'>成都爱朵智能科技有限公司提供服务 </view>
+  <view class='bottom' style="bottom:0">当前版本：1.0.2</view>
+</view>
+

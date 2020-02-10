@@ -1,0 +1,14 @@
+<view style='min-height:100vh;position:relative;padding:10px;background:#f2f2f2' wx:if='{{brand !="SUNMI" }}'> 
+  <view style="position:relative;background:#fff">
+    <input placeholder-style="color:#949494" placeholder="手动输入12位数单号" value='{{trackingNumber&&trackingNumber.length?trackingNumber:""}}' bindinput='getNumber' class='tracknumInput' bindblur='getFous' />
+    <image src='/assets/img/index/close.png' class="closeimg" catchtap="clearTrackingNumber"></image>
+  </view>
+  <view class='tracknum' catchtap="scanlogistics">扫描单号</view>
+  <view>示例：</view>
+  <view>
+    <image lazy-load src="/assets/img/index/example.png" style="width:100%;margin-top:10px"></image>
+  </view>
+</view>
+ <web-view src='{{webUrl}}' wx:if='{{brand=="SUNMI" }}'></web-view>
+ <!-- <web-view src='{{webUrl}}'></web-view> -->
+ 

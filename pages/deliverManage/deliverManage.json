@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "录入单号",
+  "usingComponents": {
+    "pageLoad": "../../components/pageLoad/pageLoad"
+  }
+}

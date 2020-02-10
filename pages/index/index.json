@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "beaba仓库联盟",
+  "usingComponents": {
+    "pageLoad": "../../components/pageLoad/pageLoad"
+  }
+}

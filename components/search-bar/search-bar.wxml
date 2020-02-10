@@ -1,0 +1,13 @@
+<view class='padding search-bar'>
+  <view class='flex-between search-wrap'>
+    <input class='search-input' placeholder='{{placeholder}}' placeholder-style='color:#ccc' bindinput='getSearchText' value="{{searchText}}" />
+    <button class='search-button' bindtap='searchClicked'>搜索</button>
+    <view class='search-clear {{searchText?"show":""}} middle-center' bindtap='clearSearchTextClicked'>
+      <view class='clear'>×</view>
+    </view>
+
+    <view class='search-clear {{searchText?"":"show"}} middle-center' bindtap='scanQrcodeClicked'>
+      <image class='icon-md' src='/assets/img/index/scan.png' style='margin-right:0' />
+    </view>
+  </view>
+</view>

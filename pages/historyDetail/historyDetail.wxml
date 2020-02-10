@@ -1,0 +1,45 @@
+<!--pages/historyDetail/historyDetail.wxml-->
+
+
+<view style="background:#fff;height:19vh;display:flex;align-items:center;" catchtap="gohistoryDetail">
+  <view style='padding:0 10px;line-height:25px;width:100%;'>
+    <view>订单号：{{pickingHistoryDetail.oddNumber}}</view>
+    <view>应拣货总数：{{pickingHistoryDetail.goodsCount}}包</view>
+    <view>实际拣货总数：{{pickingHistoryDetail.sweepEdCount}}包</view>
+    <view style="display:flex;justify-content: space-between;">
+      <view>拣货人：{{pickingHistoryDetail.name}}</view>
+      <view>{{pickingHistoryDetail.deliveryTime}}</view>
+    </view>
+  </view>
+</view>
+<view style="height: 80vh;overflow-y:auto;background-color:#f2f2f2">
+  <view style="border:2px solid #f2f2f2"></view>
+  <block wx:for='{{pickingHistoryDetailList}}' wx:key="{{index}}">
+    <view style="background:#fff;padding:10px;margin-top:10px;">
+      <view class="list">
+        <view style='width:60px;height:60px;margin-right:10px;background:#ccc'>
+          <image lazy-load src="{{item.image}}" style='width:100%;height:100%'></image>
+        </view>
+        <view>
+          <view>{{item.name}}</view>
+          <view style="margin-top:20px">{{item.number}}</view>
+        </view>
+      </view>
+      <view class="listdetail">
+        <view class="flex-bet" style="width:60%">
+          <view>
+            <view style=" line-height: 30px">已扫：{{item.sweepEdCount}}包</view>
+            <view style=" line-height: 30px">箱子：{{item.boxCount}}箱</view>
+          </view>
+          <view>
+            <view style=" line-height: 30px">需扫：{{item.toSweepCount}}包</view>
+            <view style=" line-height: 30px">单件：{{item.oneCount}}包</view>
+          </view>
+
+        </view>
+        <view class="seeDetail" catchtap="golistDetail" data-list='{{item}}'>查看详情</view>
+      </view>
+    </view>
+  </block>
+
+</view>

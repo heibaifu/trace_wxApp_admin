@@ -1,0 +1,16 @@
+<view style='background:#F2F2F2;padding-top:15px;height:100%;padding-bottom:100%'>
+<view style='background:#fff;height:40%;padding:30px 40px'>
+  <!-- <verifyCode verifyImageCode="{{imageCode}}" needVerifyImage="'true'" showVerifyImage="'true'" canInputPhoneNum="'true'"  bind:getPhoneNum="getPhoneNum" bind:getVerifyCodeVal="getVerifyCodeVal" /> -->
+  <view class='padding0-10 input-container'>
+    <input type='number' password="true" bindinput="getOldPassword" type="number" class="login-input" placeholder-style="color:#ccc" maxlength="6" placeholder="请输入原密码" />
+  </view>
+  <view class='padding0-10 input-container'>
+    <input type='number' password="true" bindinput="getNewPassword" type="number" class="login-input" placeholder-style="color:#ccc" maxlength="6" placeholder="请输入新密码" />
+  </view>
+  <view catchtap='submitChangeClicked' class='padding-top20'>
+    <button class='theme-btn' hover-class="theme-btn-active" style='color:#f2f2f2;font-size:16px;'
+        disabled='{{!newPassword}}'
+      >提交</button>
+  </view>
+</view>
+</view>

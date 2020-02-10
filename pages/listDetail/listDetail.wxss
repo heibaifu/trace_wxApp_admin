@@ -1,0 +1,42 @@
+/* pages/listDetail/listDetail.wxss */
+
+.list-img {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+  background: #ccc;
+  position: relative;
+   
+}
+
+.list {
+  background: #fff;
+  border: 1px solid #e4e4e4;
+  padding: 5px;
+  display: flex;
+  margin-bottom: 10px;
+  position: relative;
+
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  margin: 10px 0 0 15px;
+}
+
+.item {
+  font-size: 16px;
+}
+
+.open {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  text-align: center;
+  width: 100%;
+  background: #f2f2f2;
+  color: #8f8f8f;
+  height: 25px;
+  line-height: 25px;
+}

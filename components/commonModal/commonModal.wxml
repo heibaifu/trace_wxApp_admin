@@ -1,0 +1,8 @@
+<view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+<view animation="{{animationData}}" class="commodity_attr_box {{positionClassName}}" wx:if="{{showModalStatus}}">
+  <view>
+  <view>
+    <slot></slot>
+    </view>
+  </view>
+</view>

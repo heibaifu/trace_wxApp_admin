@@ -1,0 +1,44 @@
+/* pages/agency/agency.wxss */
+
+.them {
+  min-height: 100vh;
+  background: #f2f2f2;
+  padding-top: 10px;
+  position: relative;
+}
+
+.list {
+  display: flex;
+  /* justify-content: space-between; */
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.lastlist {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+
+.item {
+  font-size: 16px;
+}
+
+.clickbtn {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  position: fixed;
+  bottom: 10px;
+}
+
+.commomstyle {
+  width: 50%;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+}

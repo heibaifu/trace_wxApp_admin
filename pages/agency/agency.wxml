@@ -1,0 +1,60 @@
+<!--pages/agency/agency.wxml-->
+<view class='them'>
+
+<view style="background:#fff;height:20vh;display:flex;align-items:center;">
+  <view style="padding:0 10px;width:100%">
+    <view class="flex-bet" style=" line-height: 30px">
+      <view>单号:</view>
+      <view>{{oddNumber}}</view>
+    </view>
+    <view class="flex-bet">
+      <view>经销商：</view>
+      <view style="text-align:right">
+        <view style=" line-height: 30px">{{dealerName || '--'}}</view>
+        <view>{{phone|| '--'}}</view>
+        <view style="color:#6699FF;font-weight:bold;font-size:14px" catchtap="godeliverManage">修改订单</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view style="height:55vh;background:#f2f2f2;overflow-y:auto;">
+  <block wx:for='{{pickList}}' wx:key="*item">
+    <view style="background:#fff;padding:10px;margin-top:10px;height:150px"  catchtap="golistDetail" data-list='{{item}}'>
+      <view class="list">
+        <view style='width:60px;height:60px;margin-right:10px;background:#ccc'>
+          <image lazy-load src="{{item.image}}" style='width:100%;height:100%'></image>
+        </view>
+        <view>
+          <view>{{item.name}}</view>
+          <view style="margin-top:20px">{{item.number}}</view>
+        </view>
+      </view>
+      <view class="listdetail">
+        <view class="flex-bet" style="width:60%">
+          <view>
+            <view style=" line-height: 30px">已扫：{{item.sweepEdCount}}包</view>
+            <view style=" line-height: 30px">箱子：{{item.boxCount}}箱</view>
+          </view>
+          <view>
+            <view style=" line-height: 30px">需扫：{{item.toSweepCount}}包</view>
+            <view style=" line-height: 30px">单件：{{item.oneCount}}包</view>
+          </view>
+
+        </view>
+        <view class="seeDetail">查看详情</view>
+      </view>
+    </view>
+  </block>
+</view>
+
+
+  <view class="scanBox">
+    <view class="scan" catchtap="scanCode">
+      <image src='/assets/img/index/scan.png' style="height:25px;width:25px;margin:12px 0 0 12px"></image>
+    </view>
+    <view class="scan" style="bottom:20px;background:#6699FF" catchtap="confirmDelivery">
+      <image src='/assets/img/index/comfirm.png' style="height:20px;width:25px;margin:14px 0 0 12px"></image>
+    </view>
+  </view>
+</view>

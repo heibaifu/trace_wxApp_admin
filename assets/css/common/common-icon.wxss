@@ -1,0 +1,42 @@
+.icon-xs {
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
+}
+
+.icon-sm {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.icon-md {
+  height: 24px;
+  width: 24px;
+  margin-right: 10px;
+}
+
+.icon-lg {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.icon-xl {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+
+.icon-xxl {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.icon-xxxl {
+  height: 60px;
+  width: 60px;
+  margin-right: 10px;
+}

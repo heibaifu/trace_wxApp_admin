@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/userLogin/userLogin",
+    "pages/setting/setting",
+    "pages/passowrd/passowrd",
+    "pages/historyList/historyList",
+    "pages/agency/agency",
+    "pages/agencyBoxList/agencyBoxList",
+    "pages/deliverManage/deliverManage",
+    "pages/historyDetail/historyDetail",
+    "pages/listDetail/listDetail",
+    "pages/user/tipInfo/tipInfo"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

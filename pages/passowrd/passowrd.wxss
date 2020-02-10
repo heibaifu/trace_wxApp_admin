@@ -1,0 +1,10 @@
+button[disabled] {
+  color: #666 !important;
+  background: #ccc !important;
+}
+.login-input {
+  font-size: 17px;
+  height: 45px;
+  line-height: 45px;
+  color: #333;
+}

@@ -1,0 +1,14 @@
+/* pages/agencyChoose/agencyChoose.wxss */
+.choosetime{
+  position:absolute;
+  bottom:0;
+  text-align: center;
+  color: #fff;
+  background: #6699FF;
+  height: 14vh;
+  min-height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+}

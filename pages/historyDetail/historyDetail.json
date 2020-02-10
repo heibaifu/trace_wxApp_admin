@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "拣货历史详情",
+  "usingComponents": {
+    "pageLoad": "../../components/pageLoad/pageLoad"
+  }
+}

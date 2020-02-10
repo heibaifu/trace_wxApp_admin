@@ -1,0 +1,17 @@
+/**app.wxss**/
+@import "./common/common-font.wxss";
+@import "./common/common-color.wxss";
+@import "./common/common-icon.wxss";
+@import "./common/common-layout.wxss";
+@import "./common/loading.wxss";
+@import "./common/components.wxss";
+
+
+.arrow-forward-img {
+  height: 10px;
+  width: 12px;
+}
+
+/** Text */
+
+

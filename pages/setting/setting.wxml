@@ -1,0 +1,12 @@
+<view style='height:100vh;padding:10px;border-top:1px solid #f2f2f2'>
+  <view style='background:#0099FF;border-radius: 20px;margin-bottom:10px'>
+    <view class='editPassword' bindtap='goPassowrd'>
+      <view class='item-lg' style='color: #fff'>修改密码</view>
+    </view>
+  </view>
+  <!-- <view style='background:#FF8716;border-radius: 20px;margin-bottom:10px'>
+    <view class='editPassword' bindtap='logoutClick'>
+      <view class='item-lg' style='color: #fff'>注销</view>
+    </view>
+  </view> -->
+</view>
